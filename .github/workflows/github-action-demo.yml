@@ -1,9 +1,0 @@
-name: Build Action Sample
-on: [push]
-jobs:
-  build-action-sample:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout the repository code
-      - uses: actions/checkout@v3
-      - run: mvn clean install
