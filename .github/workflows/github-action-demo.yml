@@ -3,6 +3,7 @@ on: [push]
 jobs:
   build-action-sample:
     runs-on: ubuntu-latest
-    - name: Checkout the repository code
-    - uses: actions/checkout@v3
-    - run: mvn clean install
+    steps:
+      - name: Checkout the repository code
+      - uses: actions/checkout@v3
+      - run: mvn clean install
